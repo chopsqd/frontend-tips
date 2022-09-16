@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 243, 186);
+}
+
+.header {
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 10px 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    position: relative;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
+
+.button:active {
+    bottom: -1px;
+}
+
+.button--all {
+    background-color: rgb(255, 162, 31);
+}
+
+.button--cat {
+    background-color: rgb(27, 255, 31);
+}
+
+.button--dog {
+    background-color: rgb(255, 26, 26);
+}
+
+.button--bird {
+    background-color: rgb(23, 23, 255);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.card {
+    width: calc(33.3333333% - 60px);
+    margin: 30px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+    overflow: hidden;
+}
+
+.cat {
+    background-color: rgb(27, 255, 31);
+}
+
+.dog {
+    background-color: rgb(255, 26, 26);
+}
+
+.bird {
+    background-color: rgb(23, 23, 255);
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
