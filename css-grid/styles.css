@@ -1,0 +1,82 @@
+body {
+    display: grid;
+}
+
+.cards-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(200px, 260px));
+    grid-template-rows: repeat(4, 130px);
+    grid-auto-rows: 380px;
+    grid-template-areas:
+        "sale1 sale1 product1 product2"
+        "sale2 sale2 product1 product2"
+        "product3 product4 sale3 sale3"
+        "product3 product4 sale4 sale4";
+
+    justify-self: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.card-demo {
+    display: grid;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+    min-height: 50px;
+}
+
+.card-demo p {
+    align-self: center;
+    justify-self: center;
+}
+
+.sale-1 { grid-area: sale1 }
+.sale-2 { grid-area: sale2 }
+.sale-3 { grid-area: sale3 }
+.sale-4 { grid-area: sale4 }
+
+.product-1 { grid-area: product1}
+.product-2 { grid-area: product2}
+.product-3 { grid-area: product3}
+.product-4 { grid-area: product4}
+
+@media (max-width: 889px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, minmax(180px, 260px));
+        grid-template-rows: repeat(8, 130px);
+        grid-auto-rows: 280px;
+        grid-template-areas:
+            "sale1 sale1"
+            "sale2 sale2"
+            "product1 product2"
+            "product1 product2"
+            "sale3 sale3"
+            "sale4 sale4"
+            "product3 product4"
+            "product3 product4";
+    }
+}
+
+@media (max-width: 409px) {
+    .cards-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 140px);
+        grid-auto-rows: 300px;
+        grid-template-areas:
+            "sale1"
+            "sale2"
+            "product1"
+            "product1"
+            "product2"
+            "product2"
+            "sale3"
+            "sale4"
+            "product3"
+            "product3"
+            "product4"
+            "product4";
+    }
+}
+
