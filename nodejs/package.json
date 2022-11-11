@@ -1,0 +1,20 @@
+{
+  "name": "nodejs",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "NodeJs practice app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "js"
+  ],
+  "author": "Chopsqd",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "yargs": "^17.6.2"
+  }
+}
